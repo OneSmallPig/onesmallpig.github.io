@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <!-- Open Graph Data -->
-  <meta property="og:title" content="关于SpringBoot的容器定制"/>
+  <meta property="og:title" content="SpringBoot容器配置"/>
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="Hexo"/>
   <meta property="og:type" content="article" />
@@ -47,7 +47,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-title with-background-image">
-          <p class="title">关于SpringBoot的容器定制</p>
+          <p class="title">SpringBoot容器配置</p>
           <p class="subtitle"></p>
         </div>
         <div class="site-menu with-background-image">
@@ -103,16 +103,34 @@
           
           <!-- Date -->
           <span class="date-time info">On
-            <span class="date">2019-12-23</span>
-            <span class="time">17:05:13</span>
+            <span class="date">2019-12-25</span>
+            <span class="time">17:34:54</span>
           </span>
+          
+          <!--  Categories  -->
+            <span class="categories info">Under 
+
+<a href="/categories/SpringBoot/">SpringBoot</a>
+</span>
           
         </div>
         <!-- Tags -->
         
+          <div class="post-tags text-muted">
+            Tags: 
+
+<a class="tag" href="/tags/use/">#use</a> <a class="tag" href="/tags/Component/">#Component</a> <a class="tag" href="/tags/Tomcat/">#Tomcat</a>
+
+
+          </div>
+        
         <!-- Post Main Content -->
         <div class="post-content">
-          <h2 id="SpringBoot对容器的定制和使用"><a href="#SpringBoot对容器的定制和使用" class="headerlink" title="SpringBoot对容器的定制和使用"></a>SpringBoot对容器的定制和使用</h2><h3 id="1-容器的配置"><a href="#1-容器的配置" class="headerlink" title="1.容器的配置"></a>1.容器的配置</h3><p>直接在配置文件中配置</p>
+          <p>SpringBoot的确大大方便了web服务的开发和应用，但是对于一些细节上的处理以及其机制的实现有时也可以深入探究一下，这对于未来程序的开发和思维扩展也会很有益处。</p>
+<a id="more"></a>
+
+
+<h3 id="1-容器的配置"><a href="#1-容器的配置" class="headerlink" title="1.容器的配置"></a>1.容器的配置</h3><p>直接在配置文件中配置</p>
 <figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">server.port</span>=<span class="string">8080</span></span><br><span class="line"><span class="comment">#tomcat配置项等</span></span><br><span class="line"><span class="meta">server.tomcat.host-header</span>=<span class="string">''</span></span><br></pre></td></tr></table></figure>
 
 <p>通过构造工厂类配置</p>
