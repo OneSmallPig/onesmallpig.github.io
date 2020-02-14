@@ -104,7 +104,7 @@
           <!-- Date -->
           <span class="date-time info">On
             <span class="date">2019-12-20</span>
-            <span class="time">10:55:45</span>
+            <span class="time">16:45:24</span>
           </span>
           
         </div>
@@ -117,6 +117,10 @@
 
 <p>要求前台将用户指定的该数据类型归属传输到fieldmapping中的DestFieldInfo.format部分，方便后台解析。</p>
 <p>该方法自测成功，等待前台对接。</p>
+<h6 id="2-Mybatis的使用"><a href="#2-Mybatis的使用" class="headerlink" title="2.Mybatis的使用"></a>2.Mybatis的使用</h6><p>关于oracle的连接中，可能出现错误：</p>
+<p><strong>不支持的字符集 (在类路径中添加 orai18n.jar): ZHS16GBK</strong></p>
+<p>解决方法</p>
+<p>maven仓库，引入<a href="https://mvnrepository.com/artifact/cn.easyproject/orai18n/12.1.0.2.0" target="_blank" rel="noopener">orai18n.jar</a>包</p>
 
         </div>
       </div>
